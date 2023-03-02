@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>야구게임</h1>
+        <div id="left_game">1회 초</div>
+        <div id="field">
+            <div id="roo1" class ="roo"></div>
+            <div id="roo2" class ="roo"></div>
+            <div id="roo3" class ="roo"></div>
+            <div id="roo4" class ="roo"></div>
+        </div>
+                <div id="inner_content">
+            <ul>
+                        <li></li>
+                        <li class='radi1'>B</li>
+                        <li class='radi1'>S</li>
+                        <li class='radi1'>O</li>
+            </ul>
+            <ul id="sbo-counter">
+                <li></li>
+                <li class='radi ball'></li>
+                <li class='radi strike'></li>
+                <li class='radi out'></li>
+            </ul>
+
+            <ul id="number">
+                <li></li>
+                <li class='radi1 ballc'>1</li>
+                <li class='radi1 ballc'>2</li>
+                <li class='radi1 ballc'>3</li>
+                <li class='radi1 ballc'>4</li>
+                <li class='radi1 ballc'>5</li>
+                <li class='radi1 ballc'>6</li>
+                <li class='radi1 ballc'>7</li>
+                <li class='radi1 ballc'>8</li>
+                <li class='radi1 ballc'>9</li>
+            </ul>
+
+            <ul id="comNumber">
+                <li>computer</li>
+                <li class='radi cnum'></li>
+                <li class='radi cnum'></li>
+                <li class='radi cnum'></li>
+                <li class='radi cnum'></li>
+                <li class='radi cnum'></li>
+                <li class='radi cnum'></li>
+                <li class='radi cnum'></li>
+                <li class='radi cnum'></li>
+                <li class='radi cnum'></li>
+            </ul>
+
+
+            <ul id="userNumber">
+                <li>user</li>
+                <li class='radi unum'></li>
+                <li class='radi unum'></li>
+                <li class='radi unum'></li>
+                <li class='radi unum'></li>
+                <li class='radi unum'></li>
+                <li class='radi unum'></li>
+                <li class='radi unum'></li>
+                <li class='radi unum'></li>
+                <li class='radi unum'></li>
+            </ul>
+        </div>
+
+        
+    
+        <div id="notice"></div>
+
+        <div id="score"><span class="bk">점수판</span>
+            <div class="sc">컴퓨터<div id="computer_score">0</div></div>
+            <div class="sc">사용자<div id="user_score">0</div></div>
+        </div>
+        <div id="turn">컴퓨터 차례입니다.</div>
+        <div id="play">
+            <button class="user">Deadball</button>
+            <button class="user">Strike</button>
+            <button class="user">Ball</button>
+            <button class="com">Swing</button>
+            <button class="com">commingball</button>
+        </div>
+    </div>
+    <div id="end">
+        <div>게임이 종료되었습니다.<br/></div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/baseball.css">
+    <script defer src="./js/baseball.js"> </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 점수현황판과 알림판 부분 -->
+        <header>
+            <table border="1">
+                <tr>
+                    <td class="yellow"></td>
+                    <td class="yellow">1</td>
+                    <td class="yellow">2</td>
+                    <td class="yellow">3</td>
+                    <td class="yellow">4</td>
+                    <td class="yellow">5</td>
+                    <td class="yellow">6</td>
+                    <td class="yellow">7</td>
+                    <td class="yellow">8</td>
+                    <td class="yellow">9</td>
+                    <td class="yellow">R</td>
+                </tr>
+                <tr>
+                    <td>컴퓨터</td>
+                    <td class="com_score"></td>
+                    <td class="com_score"></td>
+                    <td class="com_score"></td>
+                    <td class="com_score"></td>
+                    <td class="com_score"></td>
+                    <td class="com_score"></td>
+                    <td class="com_score"></td>
+                    <td class="com_score"></td>
+                    <td class="com_score"></td>
+                    <td class="com_total_score"></td>
+                </tr>
+                <tr>
+                    <td id="userName">사용자</td>
+                    <td class="user_score"></td>
+                    <td class="user_score"></td>
+                    <td class="user_score"></td>
+                    <td class="user_score"></td>
+                    <td class="user_score"></td>
+                    <td class="user_score"></td>
+                    <td class="user_score"></td>
+                    <td class="user_score"></td>
+                    <td class="user_score"></td>
+                    <td class="user_total_score"></td>
+                </tr>
+            </table>
+            <!-- 알림판 부분 -->
+            <div class="alert">
+                <p id="alert_text">LET'S PLAY THE BASEBALL !</p>
+            </div>
+        </header>
+        <!-- 진행상황, 모션, 버튼 그리고 숨겨진 출력값 부분 -->
+        <div id="display">
+            <!-- 홈런을 쳤을 때 출력 -->
+            <div id="notice">CHANGE</div>
+            <div id="main">
+                <!-- 스트라이크, 볼, 아웃 부분 -->
+                <div id="sbo">
+                    <table border="1">
+                        <tr>
+                            <td>S</td>
+                            <td id="strk1" class="liball strike"></td>
+                            <td id="strk2" class="liball strike"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td id="ball1" class="liball ball"></td>
+                            <td id="ball2" class="liball ball"></td>
+                            <td id="ball3" class="liball ball"></td>
+                        </tr>
+                        <tr>
+                            <td>O</td>
+                            <td id="out1" class="liball out"></td>
+                            <td id="out2" class="liball out"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 움직이는 모션 부분 -->
+                <div id="baseball">
+                    <div class="pitcher"><img src="./images/player9.png" class="pit" alt=""></div>
+                    <div class="catcher"><img src="./images/player7.png" class="cat" alt=""></div>
+                    <div class="hitter"><img src="./images/player3.png" class="bat" alt=""></div>
+                    <div class="base1 base"><img src="./images/player0.png" class="b1" alt=""></div>
+                    <div class="base2 base"><img src="./images/player0.png" class="b2" alt=""></div>
+                    <div class="base3 base" ><img src="./images/player1.png" class="b3" alt=""></div>
+                    <div class="defender1"><img src="./images/player10.png" class="d1" alt=""></div>
+                    <div class="defender2"><img src="./images/player10.png" class="d2" alt=""></div>
+                    <div class="defender3"><img src="./images/player10.png" class="d3" alt=""></div>
+                </div>
+                <!-- 버튼 부분 -->
+                <div id="btn">
+                    <!-- 공격 -->
+                    <div class="attack">
+                        <button class="btn" onclick="btn1()">스트라이크</button>
+                        <button class="btn" onclick="btn2()">볼</button>
+                        <!-- 회당 1회 / 사용 후에는 비활성화 -->
+                        <button class="btn" onclick="btn3()">필살기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

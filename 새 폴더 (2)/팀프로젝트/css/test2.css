@@ -1,0 +1,56 @@
+#wrap {
+  width: 1400px;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid black;
+}
+
+#base {
+  width: 65%;
+  height: 100vh;
+  background: lightgreen;
+}
+
+#display {
+  width: 35%;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#display > div {
+  margin: 20px;
+  height: 33%;
+}
+#display #top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lightblue;
+}
+#display #top .top_first {
+  width: 100%;
+  height: 40%;
+  border-bottom: 1px solid black;
+  display: flex;
+  padding: 0 30px;
+}
+#display #top .top_first #counts {
+  display: flex;
+}
+#display #top .top_first #counts p {
+  padding: 0 20px;
+}
+#display #top .top_sec {
+  width: 100%;
+  height: 60%;
+}
+#display #middle {
+  background: lightcoral;
+}
+#display #bottom {
+  background: lightgoldenrodyellow;
+}/*# sourceMappingURL=test2.css.map */

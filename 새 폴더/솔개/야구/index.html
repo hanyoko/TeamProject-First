@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script2.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="info">
+            <div class="text">컴퓨터가 공격을 시작합니다.</div>
+            <div class="turn_left">
+                <span>남은횟수</span>
+                <span class="turn_number">9</span>
+            </div>
+        </div>
+        <div id="score">
+            <div class="computer_score">
+                <div class="com_score_text">COMPUTER</div>
+                <div class="com_score_panel">
+                    <div class="com_panel_box">
+                        <span>컴퓨터</span>
+                        <span class="com_score_raise">0</span>
+                    </div>
+                    <div class="com_fail">
+                        실패 : <span>0</span>/3  <br>
+                        볼 : <span>0</span>/4
+                    </div>
+                </div>
+            </div>
+            <div class="user_score">
+                <div class="user_score_text">USER</div>
+                <div class="user_score_panel">
+                    <div class="user_panel_box">
+                        <span>사람</span>
+                        <span class="user_score_raise">0</span>
+                    </div>
+                    <div class="user_fail">
+                        실패 : <span>0</span>/3 <br>
+                        볼 : <span>0</span>/4
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="field">
+                <div class="fleld_box">
+                    <div class="small_box">
+                        <div class="black1_box dot1 off"></div>
+                    </div>
+                    <div class="small_box">
+                        <div class="black1_box dot2 off"></div>
+                    </div>
+                    <div class="small_box">
+                        <div class="black1_box dot3 off"></div>
+                    </div>
+                    <div class="small_box">
+                        <div class="black1_box dot4"></div>
+                    </div>
+                        <div class="black2_box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttons">
+            <div id="defense">
+                <button class="btn_strike defense_btn">스트라이크</button>
+                <button class="btn_ball defense_btn">볼</button>
+            </div>
+            <div id="attack">
+                <button class="btn_throw attack_btn">볼치기</button>
+                <button class="btn_stay attack_btn">지켜보기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

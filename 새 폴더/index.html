@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/baseball.css">
+    <script defer src="./js/baseball.js"> </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 점수현황판과 알림판 부분 -->
+        <header>
+            <table border="1">
+                <tr>
+                    <td class="yellow"></td>
+                    <td class="yellow">1</td>
+                    <td class="yellow">2</td>
+                    <td class="yellow">3</td>
+                    <td class="yellow">4</td>
+                    <td class="yellow">5</td>
+                    <td class="yellow">6</td>
+                    <td class="yellow">7</td>
+                    <td class="yellow">8</td>
+                    <td class="yellow">9</td>
+                    <td class="yellow">R</td>
+                </tr>
+                <tr>
+                    <td>컴퓨터</td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                    <td class="com_num"></td>
+                </tr>
+                <tr>
+                    <td id="userName">사용자</td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                    <td class="user_num"></td>
+                </tr>
+            </table>
+            <!-- 알림판 부분 -->
+            <div class="alert">
+                <p id="alert_text">LET'S PLAY THE BASEBALL !</p>
+            </div>
+        </header>
+        <!-- 진행상황, 모션, 버튼 그리고 숨겨진 출력값 부분 -->
+        <div id="display">
+            <!-- 홈런을 쳤을 때 출력 -->
+            <div class="notice">CHANGE</div>
+            <div id="main">
+                <!-- 스트라이크, 볼, 아웃 부분 -->
+                <div id="sbo">
+                    <table border="1">
+                        <tr>
+                            <td>S</td>
+                            <td id="strk1 strikec" class="liball"></td>
+                            <td id="strk2 strikec" class="liball"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td id="ball1 ballc" class="liball"></td>
+                            <td id="ball2 ballc" class="liball"></td>
+                            <td id="ball3 ballc" class="liball"></td>
+                        </tr>
+                        <tr>
+                            <td>O</td>
+                            <td id="out1 outc" class="liball"></td>
+                            <td id="out2 outc" class="liball"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 움직이는 모션 부분 -->
+                <div id="baseball">
+                    <div class="roo"><img src="./images/player9.png" alt=""></div>
+                    <div class="roo0"><img src="./images/player7.png" alt=""></div>
+                    <div class="roo1"><img src="./images/player3.png" alt=""></div>
+                    <div class="roo2"><img src="./images/player1.png" alt=""></div>
+                    <div class="roo3"><img src="./images/player1.png" alt=""></div>
+                    <div class="roo4"><img src="./images/player1.png" alt=""></div>
+                    <div class="out1"><img src="./images/player10.png" alt=""></div>
+                    <div class="out2"><img src="./images/player10.png" alt=""></div>
+                    <div class="out3"><img src="./images/player10.png" alt=""></div>
+                </div>
+                <!-- 버튼 부분 -->
+                <div id="btn">
+                    <!-- 공격 -->
+                    <div class="attack">
+                        <button id="A_btn">스트라이크</button>
+                        <button id="B_btn">볼</button>
+                        <!-- 경기당 1회 / 사용 후에는 비활성화 -->
+                        <button id="C_btn">필살기</button>
+                    </div>
+
+                    <!-- 자바스크립트로 구현 -->
+                    <!-- 수비 -->
+                    <!-- <div class="defense">
+                        <button>던지기</button>
+                        <button>데드볼</button> -->
+                        <!-- 경기당 1회 / 사용 후에는 비활성화 -->
+                        <!-- <button>마구</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

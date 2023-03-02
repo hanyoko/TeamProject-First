@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>야구 게임</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="desc">
+            <table class="score">
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>총</th>
+                </tr>
+                <tr>
+                    <th class="attack computer">컴퓨터</th>
+                    <td class="computer_score">0</td>
+                    <td class="computer_score"></td>
+                    <td class="computer_score"></td>
+                    <td class="computer_score"></td>
+                    <td class="computer_score"></td>
+                    <td class="computer_score"></td>
+                    <td class="computer_score"></td>
+                    <td class="computer_score"></td>
+                    <td class="computer_score"></td>
+                    <td class="computer_total_score">0</td>
+
+                </tr>
+                <tr>
+                    <th>플레이어</th>
+                    <td class="player_score">0</td>
+                    <td class="player_score"></td>
+                    <td class="player_score"></td>
+                    <td class="player_score"></td>
+                    <td class="player_score"></td>
+                    <td class="player_score"></td>
+                    <td class="player_score"></td>
+                    <td class="player_score"></td>
+                    <td class="player_score"></td>
+                    <td class="player_total_score">0</td>
+                </tr>
+            </table>
+            <div class="guide" id="defenseText">컴퓨터가 먼저 공격합니다.</div>
+            <div class="guide" id="attackText">버튼을 눌러 공을 던져주세요!</div>
+            <div class="guide" id="resultText"></div>
+        </div>
+        <div class="screen">
+            <div class="innings">
+                이닝: <span class="inning">1</span>
+            </div>
+            <div class="playground">
+                <div class="rect">
+                </div>
+                <div class="base" id="base1"></div>
+                <div class="base" id="base2"></div>
+                <div class="base" id="base3"></div>
+                <div class="base" id="base0"></div>
+            </div>
+            <ul class="play_score">
+                <li class="strike">
+                    <strong>strike</strong> <span class="strike_score score">0</span>
+                </li>
+                <li class="ball">
+                    <strong>ball</strong> <span class="ball_score score">0</span>
+                </li>
+                <li class="out">
+                    <strong>out</strong> <span class="out_score score">0</span>
+                </li>
+            </ul>
+        </div>
+        <div class="controller">
+            <button class="btn" onclick="play('btn1')">스트라이크</button>
+            <button class="btn" onclick="play('btn2')">볼</button>
+        </div>
+    </div>
+    <div class="modal__container">
+        <div class="modal">
+            새 게임을 시작하시겠습니까?
+            <button onclick="location.reload()">시작</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
